@@ -1,6 +1,3 @@
-<img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/ca640d2c-ee32-4857-add2-b964edec11d5" />
-
-
 # Fullstack DevProfile & Flutter App
 
 This project is a complete portfolio solution consisting of a backend (Express.js), frontend (Next.js), and a mobile app (Flutter).
