@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog Post List</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6467f2",
+                        "secondary": "#ec4899", /* Pink-500 equivalent */
+                        "background-light": "#f8f9fb",
+                        "background-dark": "#101122",
+                        "surface-light": "#ffffff",
+                        "text-main": "#1F2937",
+                        "text-muted": "#6B7280",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "1rem", /* 16px as requested */
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'card': '0 0 0 1px rgba(0,0,0,0.03), 0 2px 8px rgba(0,0,0,0.04)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for horizontal scroll areas */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-text-main">
+<div class="relative flex h-full min-h-screen w-full max-w-md mx-auto flex-col bg-background-light dark:bg-background-dark overflow-x-hidden shadow-2xl">
+<!-- Sticky Header -->
+<div class="sticky top-0 z-20 bg-background-light/80 backdrop-blur-md dark:bg-background-dark/80 px-4 pt-12 pb-2">
+<div class="flex items-center justify-between">
+<button class="flex size-10 items-center justify-center rounded-full bg-white dark:bg-white/10 shadow-sm text-text-main dark:text-white hover:bg-gray-50 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h2 class="text-text-main dark:text-white text-lg font-bold leading-tight tracking-tight">Blog</h2>
+<button class="flex size-10 items-center justify-center rounded-full bg-white dark:bg-white/10 shadow-sm text-text-main dark:text-white hover:bg-gray-50 transition-colors">
+<span class="material-symbols-outlined text-[24px]">notifications</span>
+</button>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-4">
+<label class="relative flex w-full items-center">
+<div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-primary">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="block w-full rounded-xl border-none bg-white dark:bg-white/5 py-3.5 pl-11 pr-4 text-sm text-text-main shadow-soft placeholder:text-text-muted focus:ring-2 focus:ring-primary focus:ring-opacity-50 transition-shadow" placeholder="Search articles, tags..." type="text"/>
+</label>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 px-4 pb-6 overflow-x-auto scrollbar-hide">
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-primary px-5 shadow-md shadow-primary/25 transition-transform active:scale-95">
+<p class="text-white text-sm font-medium leading-normal">All</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/5 px-5 border border-transparent hover:border-primary/20 hover:bg-primary/5 transition-colors">
+<p class="text-text-muted dark:text-gray-300 text-sm font-medium leading-normal">Tutorials</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/5 px-5 border border-transparent hover:border-primary/20 hover:bg-primary/5 transition-colors">
+<p class="text-text-muted dark:text-gray-300 text-sm font-medium leading-normal">React</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/5 px-5 border border-transparent hover:border-primary/20 hover:bg-primary/5 transition-colors">
+<p class="text-text-muted dark:text-gray-300 text-sm font-medium leading-normal">Design</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center rounded-full bg-white dark:bg-white/5 px-5 border border-transparent hover:border-primary/20 hover:bg-primary/5 transition-colors">
+<p class="text-text-muted dark:text-gray-300 text-sm font-medium leading-normal">Career</p>
+</button>
+</div>
+<!-- Featured Post (Large Card) -->
+<div class="px-4 pb-6">
+<div class="group relative flex flex-col overflow-hidden rounded-xl bg-white dark:bg-[#1a1c35] shadow-card hover:shadow-soft transition-all duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<div class="absolute top-3 left-3 z-10 rounded-md bg-secondary/90 px-2 py-1 text-xs font-bold text-white shadow-sm backdrop-blur-sm">
+                        FEATURED
+                    </div>
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Abstract 3d rendering of colorful shapes representing react components" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrHVD-uA6gJGW_ZlFQaZiVi6Gd31thwO4OBk76VL5ZRLbmqm40uEJO4VeNHL3nEyTEuAvHmb5PlIIVpmHNwAAQtf917ph7yJV9zAJEgvmyx1XZdOgwKA53nRO9TqsxITsRMuv3isVxRTOTJ_TqKeu0gb-NXhAByMW0rPFU1SNgyLLcdhQ_JylV3K8P_2fFbJ_x-ltTQ8AfZUi7zwnX75cvkWZVXFsXKrrKd2U2JCbOvMG-Ff-cSfTQLpY95y2uof3hj6909zmedqA');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+</div>
+<div class="p-5">
+<div class="flex items-center gap-2 mb-2">
+<span class="text-xs font-semibold text-primary uppercase tracking-wider">React</span>
+<span class="text-xs text-gray-400">•</span>
+<span class="text-xs text-text-muted dark:text-gray-400">Oct 24 • 5 min read</span>
+</div>
+<h3 class="mb-2 text-xl font-bold text-text-main dark:text-white leading-tight">Mastering Server Components in Next.js 14</h3>
+<p class="mb-4 text-sm text-text-muted dark:text-gray-400 line-clamp-2">
+                        Dive deep into the new paradigm of React Server Components and how they reshape data fetching patterns.
+                    </p>
+<div class="flex items-center text-primary font-semibold text-sm group/link cursor-pointer">
+                        Read Article 
+                        <span class="material-symbols-outlined ml-1 text-[18px] transition-transform group-hover/link:translate-x-1">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Title -->
+<div class="px-4 mb-3 flex items-center justify-between">
+<h3 class="text-lg font-bold text-text-main dark:text-white">Latest Posts</h3>
+<button class="text-sm font-medium text-primary hover:text-primary/80">View all</button>
+</div>
+<!-- List Items -->
+<div class="flex flex-col gap-4 px-4 pb-8">
+<!-- Item 1 -->
+<div class="group flex gap-4 rounded-xl bg-white dark:bg-[#1a1c35] p-3 shadow-card hover:shadow-soft transition-all duration-300 cursor-pointer">
+<div class="relative shrink-0 overflow-hidden rounded-lg size-[84px]">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Code syntax highlighting on a dark computer screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1W3sWw8UXDFIHkKcdzhq0fOi1jF8FpVjhRzfUbiIUg-dzP-LqVGb3uXZF57GSD51pyKKWguiZAgFnG7ftFG-KsVcjFKllomo7TWIsd9sRnIR0cOev9ilqtrX5U6UGUz_Gdh9yHipXJ6dZ1dRixj3rsL7WeiY6l7qPurkMWqewSoOim5VUApf9Aor5r_VtyvQWVQd0B28hWBrG6pUOYJaMUSaBQ599iJXPPKw1XGWrMyREYjRkI5Gep4Q5n0lyb49B8rEPHlLOh3k');">
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-center py-1">
+<div class="flex justify-between items-start">
+<p class="text-text-main dark:text-white text-[15px] font-bold leading-tight mb-1 pr-2 line-clamp-2">Building Scalable APIs with Node.js</p>
+</div>
+<p class="text-text-muted dark:text-gray-400 text-xs font-normal leading-normal line-clamp-2 mb-2">Learn how to structure your backend for high availability and performance.</p>
+<div class="flex items-center justify-between">
+<p class="text-primary text-[11px] font-medium bg-primary/10 px-2 py-0.5 rounded-md">Backend</p>
+<p class="text-gray-400 text-[11px]">2 days ago</p>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group flex gap-4 rounded-xl bg-white dark:bg-[#1a1c35] p-3 shadow-card hover:shadow-soft transition-all duration-300 cursor-pointer">
+<div class="relative shrink-0 overflow-hidden rounded-lg size-[84px]">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Abstract gradient waves in blue and purple colors" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuEb6Vce8dNbk0N0W09LUf7d3OD9Vx6WH8pry1hlYkomB4dP4Gk81TMzQEzqapjmpHDwKUgLOKCcZHSLx5tU8Ls7_Ly9nqlgfnLkHYS5dFDxgaixwIOjz462JZH_w5t6tanxF1Dd6vq2EwNoQOFyK_QdutcEogkr4eKPStm1QMRYSmV-cf3E0YCfuugUdmJxNPeUOHZV7W2RK2PR_eYBFQWoOGbRC0VP4ARiBgAbxJEeJo4A0iDkm_TEJNQTEGpf71al5gnH54A40');">
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-center py-1">
+<div class="flex justify-between items-start">
+<p class="text-text-main dark:text-white text-[15px] font-bold leading-tight mb-1 pr-2 line-clamp-2">Why I switched to Tailwind CSS</p>
+</div>
+<p class="text-text-muted dark:text-gray-400 text-xs font-normal leading-normal line-clamp-2 mb-2">A deep dive into utility-first CSS and why it speeds up development.</p>
+<div class="flex items-center justify-between">
+<p class="text-primary text-[11px] font-medium bg-primary/10 px-2 py-0.5 rounded-md">CSS</p>
+<p class="text-gray-400 text-[11px]">4 days ago</p>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group flex gap-4 rounded-xl bg-white dark:bg-[#1a1c35] p-3 shadow-card hover:shadow-soft transition-all duration-300 cursor-pointer">
+<div class="relative shrink-0 overflow-hidden rounded-lg size-[84px]">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="UI design interface layout on a laptop screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhtj8GtixU9LoqiyvDiTf1pxM8jhKdNguJmjnE3VL0mfftEDrVvwAsKy3-zCNZa5la-jIvdIwT5zBEt1dBHcBazAXJogSUS_slnEBaKqjNoBP6GJhOFH27crWqWqYVtg4JQlf2cMXr_bMS7Qn9sU0tnuY_kCCBZuw2n_yX0AGgYAjNpCrwrx_BwGDe7hKj4gMC2a6jFlg9wPGXd9_ZjIORA3TNNdfFqo3LREGrTBM3bAFTE00z-NJPMDg8bazBtTYCSgoliw9cAxg');">
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-center py-1">
+<div class="flex justify-between items-start">
+<p class="text-text-main dark:text-white text-[15px] font-bold leading-tight mb-1 pr-2 line-clamp-2">Designing for Accessibility in 2024</p>
+</div>
+<p class="text-text-muted dark:text-gray-400 text-xs font-normal leading-normal line-clamp-2 mb-2">Ensuring your applications are usable by everyone, regardless of ability.</p>
+<div class="flex items-center justify-between">
+<p class="text-primary text-[11px] font-medium bg-primary/10 px-2 py-0.5 rounded-md">Design</p>
+<p class="text-gray-400 text-[11px]">1 week ago</p>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group flex gap-4 rounded-xl bg-white dark:bg-[#1a1c35] p-3 shadow-card hover:shadow-soft transition-all duration-300 cursor-pointer">
+<div class="relative shrink-0 overflow-hidden rounded-lg size-[84px]">
+<div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Modern office desk setup with code on screen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCG6qmIWP1CYAwGLOIgjD9xgZsQqSB7Foc_vtdQoXGhGJI1Qf_FBcrH7MVqm1XL7yBkeHyuw7Zu_ALtJ_n4BVpUpvgHQBsjoQXLufHrmxYYENoCGfbqUQWqclI8SNPnAzX2Vdqb5uvSscw1HSw_M0bvlKBT_qxjUAXUzfHe1MzV-Un63fujJ1rsj4Qz7ay-HbFDGjOp_VexsTBuSBa6zBlxqyp33xvnw51nQdVi1G2ECi0olAx39WgOrQBVAK3D6Xq7h7eAnxwH0UM');">
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-center py-1">
+<div class="flex justify-between items-start">
+<p class="text-text-main dark:text-white text-[15px] font-bold leading-tight mb-1 pr-2 line-clamp-2">The Future of Web Assembly</p>
+</div>
+<p class="text-text-muted dark:text-gray-400 text-xs font-normal leading-normal line-clamp-2 mb-2">How WASM is changing the browser landscape and performance.</p>
+<div class="flex items-center justify-between">
+<p class="text-primary text-[11px] font-medium bg-primary/10 px-2 py-0.5 rounded-md">Wasm</p>
+<p class="text-gray-400 text-[11px]">2 weeks ago</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation (Contextual) -->
+<div class="sticky bottom-0 bg-white/90 backdrop-blur-lg dark:bg-[#1a1c35]/90 border-t border-gray-100 dark:border-white/5 py-3 px-6 flex justify-between items-center z-10">
+<button class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[24px] filled font-variation-settings-'FILL':1">article</span>
+<span class="text-[10px] font-medium">Blog</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">folder_open</span>
+<span class="text-[10px] font-medium">Projects</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[24px]">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</div>
+</div>
+</body></html>

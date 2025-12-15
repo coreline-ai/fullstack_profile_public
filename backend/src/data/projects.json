@@ -1,0 +1,290 @@
+[
+    {
+        "title": "Verifying project data to prepare for testing.",
+        "slug": "verifying-project-data-to-prepare-for-testing.",
+        "summary": "Next.js 16 호환성 패치: params가 Promise로 전달되는 방식에 맞춰 React.use()를 사용하여 안전하게 언래핑하도록 수정했습니다.",
+        "tags": [],
+        "content": "<!-- # --> Project ![Description]()\n\n![image](http://localhost:4000/uploads/1765685280921-811636553.png)",
+        "thumbnail": "http://localhost:4000/uploads/1765685248379-678823017.png",
+        "period": "",
+        "createdAt": "2025-12-14T04:08:18.194Z"
+    },
+    {
+        "title": "Paste Test",
+        "slug": "paste-test",
+        "summary": "Summary for paste test",
+        "tags": [],
+        "content": "Checking Paste Logic",
+        "thumbnail": "",
+        "period": "",
+        "createdAt": "2025-12-14T02:30:41.474Z"
+    },
+    {
+        "title": "Test Project",
+        "slug": "test-project",
+        "summary": "Test Summary",
+        "tags": [],
+        "content": "**Bold Text**",
+        "thumbnail": "https://via.placeholder.com/150",
+        "period": "",
+        "createdAt": "2025-12-14T02:25:05.018Z"
+    },
+    {
+        "title": "Codex CLI에서 GPT-5.2 쓰려면",
+        "slug": "codex-cli에서-gpt-5.2-쓰려면",
+        "summary": "GPT-5.2는 보통 Pro/Plus/Business/Enterprise 등 상위 플랜이어야 활성화되는 경우가 많습니다.",
+        "tags": [
+            "codex",
+            "openai"
+        ],
+        "content": "# **현재 상황**\n\n많은 사용자/개발자 경험담 및 커뮤니티 리포트에 따르면 Codex CLI에서 GPT-5.2 모델을 선택하여 사용하는 것이 가능하다는 사례가 있습니다 (환경에 따라 모델 선택 UI가 다를 수 있음) — Reddit 등 커뮤니티에 올라온 경험 사례 참고. \nReddit\n\n여러 리뷰에서도 GPT-5.2를 Codex CLI에서 실제로 사용해 본 경험이 언급됩니다. \nmatt shumer\n\n# **🔹 하지만 공식 문서 기준**\n\nOpenAI 공식 문서에서는 Codex CLI의 기본/권장 코딩용 모델은 GPT-5.1-Codex-Max로 설명되고 있습니다.\n이 모델은 **Codex-환경(즉, CLI/IDE/Cloud)**에 최적화된 코딩 에이전트 모델입니다. \nOpenAI Platform\n\nGPT-5.2는 일반적으로 범용 AI 모델로 설계되어 있으며, OpenAI 문서에서는 Codex의 기본 모델로 특별히 소개되지는 않지만, Codex 환경에서도 사용 가능한 것으로 보고되고 있습니다. \nOpenAI Platform",
+        "thumbnail": "http://localhost:4000/uploads/1765628719666-151560726.png",
+        "period": "2023.01.01",
+        "createdAt": "2025-12-13T12:25:41.325Z"
+    },
+    {
+        "title": "개발자 프로파일 블로그",
+        "slug": "trd-—-개발자-프로파일-블로그-&-앱-확장(webview)-플랫폼",
+        "summary": "PRD를 기반으로 실제 구현을 위한 기술적 설계 및 개발 기준 정의 프런트엔드 / 백엔드 / 앱 개발자",
+        "tags": [
+            "Next.js TypeScript React Tailwind"
+        ],
+        "content": "# TRD — 개발자 프로파일 블로그 & 앱 확장(WebView) 플랫폼\n\n## 1. 문서 개요\n- 목적: PRD를 기반으로 실제 구현을 위한 기술적 설계 및 개발 기준 정의\n- 대상: 프런트엔드 / 백엔드 / 앱 개발자\n- 버전: v1.0\n- 범위: Web(Next.js) + Backend(Node.js) + App(WebView)\n\n---\n\n## 2. 기술 스택\n\n### 2.1 Frontend (Web)\n- Framework: Next.js (App Router)\n- Language: TypeScript\n- Rendering:\n  - React Server Components 기본\n  - Client Component 최소화\n- Styling:\n  - Tailwind CSS\n  - Modern CSS (container queries, clamp, oklch)\n- Animation:\n  - Framer Motion\n- Content:\n  - MDX 기반 콘텐츠 관리\n\n### 2.2 Backend\n- Runtime: Node.js LTS\n- Framework: Express 또는 Fastify\n- 데이터 관리:\n  - MVP: 파일 기반(MDX)\n  - 확장: PostgreSQL + Prisma ORM\n- 인증:\n  - 공개 서비스 (로그인 없음)\n  - 관리자 로컬 관리 방식\n\n### 2.3 App\n- Framework: Flutter\n- 방식: WebView 기반\n- 패키지: webview_flutter\n- 네비게이션: URL 기반 Deep Link\n\n---\n\n## 3. 전체 아키텍처\n\n### 3.1 시스템 구조\n\nBrowser / Flutter WebView  \n→ Next.js Web (SSR / SSG)  \n→ Node.js API  \n→ File System 또는 Database  \n\n### 3.2 설계 원칙\n- Web 단일 소스 유지\n- App은 WebView 래핑만 수행\n- Backend는 Headless CMS 역할\n\n---\n\n## 4. Frontend 상세 설계\n\n### 4.1 라우팅 구조\n\n/  \n/projects  \n/projects/[slug]  \n/blog  \n/blog/[slug]  \n/contact  \n\n### 4.2 디렉터리 구조\n\napp/  \ncomponents/  \ncomponents/ui  \ncomponents/layout  \ncomponents/blog  \ncomponents/project  \ncontent/  \ncontent/blog  \ncontent/projects  \nlib/  \nstyles/  \n\n### 4.3 반응형 전략\n- Mobile First\n- Container Query 기반 컴포넌트 설계\n- WebView Safe Area 고려한 padding 처리\n\n---\n\n## 5. 콘텐츠 처리 설계 (MDX)\n\n### 5.1 콘텐츠 저장 구조\n- 모든 글과 프로젝트는 MDX 파일로 관리\n- Frontmatter + 본문 구조\n\n### 5.2 Frontmatter 필드 정의\n- title: 제목\n- slug: URL 식별자\n- tags: 태그 배열\n- summary: 리스트 요약\n- publishedAt 또는 createdAt: 날짜\n\n---\n\n## 6. Backend API 설계\n\n### 6.1 API 역할\n- 프로젝트/블로그 데이터 제공\n- Contact 메시지 저장\n- 페이지 이벤트 기록\n\n### 6.2 API 엔드포인트\n\nGET /api/projects  \nGET /api/projects/{slug}  \nGET /api/blog  \nGET /api/blog/{slug}  \nPOST /api/contact  \n\n---\n\n## 7. 데이터 모델 (DB 전환 대비)\n\n### 7.1 Project\n- id\n- title\n- slug\n- summary\n- tags\n- content\n- createdAt\n\n### 7.2 BlogPost\n- id\n- title\n- slug\n- tags\n- series (optional)\n- content\n- publishedAt\n\n### 7.3 Contact\n- id\n- name\n- email\n- message\n- createdAt\n\n---\n\n## 8. SEO & 메타데이터\n\n### 8.1 SEO 전략\n- 페이지별 메타데이터 자동 생성\n- Open Graph 이미지 자동화\n- JSON-LD 구조화 데이터 적용\n\n### 8.2 검색 엔진 대응\n- Sitemap 자동 생성\n- robots.txt 설정\n\n---\n\n## 9. 성능 최적화 전략\n\n- Static Generation 우선\n- Server Components 활용\n- 이미지 Lazy Loading\n- 코드 스플리팅\n- 폰트 최적화\n\n---\n\n## 10. 보안 설계\n\n- Input Validation (Zod)\n- API Rate Limiting\n- CORS 제한\n- 환경 변수 분리 관리\n\n---\n\n## 11. Flutter WebView 연동 설계\n\n### 11.1 구조\n- 단일 URL 진입\n- 모든 화면은 웹에서 처리\n\n### 11.2 고려 사항\n- Safe Area 대응\n- URL Intercept 확장 여지\n- JavaScript Channel (추후 Native 연동 대비)\n\n---\n\n## 12. 개발 규칙\n\n- TypeScript Strict Mode\n- ESLint + Prettier 적용\n- Conventional Commits\n- 컴포넌트 단위 책임 분리\n\n---\n\n## 13. 배포 전략\n\n- Frontend: Vercel\n- Backend:\n  - 초기: Vercel API Routes\n  - 확장: 별도 Node 서버\n- CI/CD:\n  - GitHub Actions\n- 환경:\n  - dev / prod 분리\n\n---\n\n## 14. 로깅 & 모니터링\n\n- 서버 로그 기록\n- 페이지 조회 이벤트 저장\n- 오류 발생 시 알림 연동(선택)\n\n---\n\n## 15. 범위 제외\n\n- 사용자 로그인 시스템\n- 실시간 채팅\n- 네이티브 앱 UI 개발\n\n---\n\n## 16. 결론\n본 TRD는 웹 중심 설계를 기반으로  \nFlutter WebView 앱까지 자연스럽게 확장 가능한 구조를 목표로 하며,  \n1인 개발부터 팀 확장까지 무리 없이 대응 가능한 기술 기준을 정의한다.\n",
+        "thumbnail": "",
+        "period": "2023.10.01 - 2025.10.10",
+        "createdAt": "2025-12-13T12:01:43.345Z"
+    },
+    {
+        "title": "Cycle Test",
+        "slug": "cycle-test",
+        "summary": "",
+        "tags": [],
+        "content": "# Project Description",
+        "thumbnail": "https://placehold.co/600x400/png?text=Task+Master",
+        "period": "",
+        "createdAt": "2025-12-13T05:03:28.355Z"
+    },
+    {
+        "title": "11111111",
+        "slug": "22222222",
+        "summary": "333333333",
+        "tags": [],
+        "content": "# Project Description",
+        "thumbnail": "https://placehold.co/600x400/png?text=Task+Master",
+        "period": "",
+        "createdAt": "2025-12-13T04:50:03.761Z"
+    },
+    {
+        "title": "Fix Verify",
+        "slug": "fix-verify",
+        "summary": "Summary",
+        "tags": [],
+        "content": "# Project Description",
+        "thumbnail": "",
+        "period": "",
+        "createdAt": "2025-12-13T04:47:28.039Z"
+    },
+    {
+        "title": "Curl Project",
+        "summary": "Testing backend",
+        "tags": [
+            "Test"
+        ],
+        "content": "# curl test",
+        "slug": "curl-project",
+        "createdAt": "2025-12-13T04:24:18.389Z"
+    },
+    {
+        "slug": "neobank-mobile-app",
+        "title": "NeoBank Mobile App",
+        "summary": "A complete redesign of the mobile banking experience focusing on accessibility and speed.",
+        "tags": [
+            "React Native",
+            "GraphQL",
+            "Mobile"
+        ],
+        "content": "## Overview\nRedesigned the entire mobile banking experience...\n\n## Challenge\nLegacy code was slow...\n\n## Solution\nMigrated to React Native...",
+        "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuCQz5d2cXHiyDKtyvvB-dmXg73Bf3-hBnE4MVn4ZkbG0F3JJWtn_efv_epmjdKQbqxsWgxAfDP3Gs_zrTZ4M_d8gErxDNkLfT5hkGFPN8RYEs8j8xQF7Qt7BzhEBd7X2nbROsuD947ceyyvLWfW9VS6dwg79MTmSKJkuw3YyToGk0wjCz5W6ebFnPhF1DI1ohLJlSiYyK3hQCElMp5AFT2ixtmhvdqs8pCoMn7zsEUX1KPGiNHyqHlL_sZOnersm4jwYALSbsbIH_s",
+        "period": "2023.01 - 2023.06",
+        "metrics": [
+            {
+                "label": "Downloads",
+                "value": "100k+"
+            },
+            {
+                "label": "Rating",
+                "value": "4.8/5.0"
+            }
+        ],
+        "gallery": [
+            "https://placehold.co/600x400/png?text=Bank+Screen+1",
+            "https://placehold.co/600x400/png?text=Bank+Screen+2"
+        ],
+        "createdAt": "2023-10-15T00:00:00Z"
+    },
+    {
+        "slug": "ai-dashboard",
+        "title": "AI Analytics Dashboard",
+        "summary": "Real-time analytics dashboard powered by machine learning models.",
+        "tags": [
+            "Next.js",
+            "Python",
+            "AWS",
+            "Web"
+        ],
+        "content": "## Overview\nA dashboard for visualizing AI model performance...\n",
+        "thumbnail": "https://placehold.co/600x400/png",
+        "period": "2023.07 - Present",
+        "metrics": [
+            {
+                "label": "Data Processed",
+                "value": "1TB/day"
+            },
+            {
+                "label": "Latency",
+                "value": "<50ms"
+            }
+        ],
+        "gallery": [
+            "https://placehold.co/600x400/png?text=Dashboard+1",
+            "https://placehold.co/600x400/png?text=Dashboard+2"
+        ],
+        "createdAt": "2023-08-20T00:00:00Z"
+    },
+    {
+        "slug": "artisan-commerce",
+        "title": "Artisan Economy Platform",
+        "summary": "A marketplace causing a revolution in the artisan economy.",
+        "tags": [
+            "Next.js",
+            "Shopify",
+            "Three.js",
+            "Web"
+        ],
+        "content": "## Overview\nA nice marketplace...",
+        "thumbnail": "https://lh3.googleusercontent.com/aida-public/AB6AXuCkMsSMOoAvQET8p9cD88awaZs4MIAtVPHJx2K_qw2Pe4g8fPSWtu9wmJSQ22zRm5L84bf_hxzZzAsqu33rw95ba-dUy2of2VoFml7k7gZA-wI01A-BDfDvfXYuYyEVSOtPS6BCLt9Adn8JuSWggcCECh2iaCrauvbWkOCKScrf-1uSsQBimGePXEmcPRAso0iSGRuTYXHn0Na_2xdcC_wIlrTdI1hZFnhLrp8kzVI8LSqtswZgCrSC91gInbjZwjxvMBUaP1cMv14",
+        "period": "2022.05 - 2022.12",
+        "metrics": [
+            {
+                "label": "Sales",
+                "value": "$2M+"
+            },
+            {
+                "label": "Sellers",
+                "value": "500+"
+            }
+        ],
+        "gallery": [],
+        "createdAt": "2022-12-10T00:00:00Z"
+    },
+    {
+        "slug": "smart-home-iot",
+        "title": "Smart Home IoT Hub",
+        "summary": "Centralized control hub for smart home devices with voice integration.",
+        "tags": [
+            "IoT",
+            "Node.js",
+            "React",
+            "MQTT"
+        ],
+        "content": "## Overview\nConnects various smart devices...\n",
+        "thumbnail": "https://placehold.co/600x400/png?text=IoT+Hub",
+        "period": "2023.01 - 2023.05",
+        "metrics": [
+            {
+                "label": "Devices",
+                "value": "50+"
+            }
+        ],
+        "gallery": [],
+        "createdAt": "2023-06-01T00:00:00Z"
+    },
+    {
+        "slug": "crypto-exchange-pro",
+        "title": "CryptoExchange Pro",
+        "summary": "Secure and fast cryptocurrency exchange platform with advanced trading charts.",
+        "tags": [
+            "Blockchain",
+            "Go",
+            "Vue.js",
+            "WebSockets"
+        ],
+        "content": "## Overview\nTrading platform for crypto assets...\n",
+        "thumbnail": "https://placehold.co/600x400/png?text=Crypto+Exchange",
+        "period": "2022.08 - 2023.02",
+        "metrics": [
+            {
+                "label": "Vol",
+                "value": "$10M"
+            }
+        ],
+        "gallery": [],
+        "createdAt": "2023-03-15T00:00:00Z"
+    },
+    {
+        "slug": "task-master-saas",
+        "title": "TaskMaster SaaS",
+        "summary": "Collaborative project management tool for remote teams.",
+        "tags": [
+            "SaaS",
+            "Ruby on Rails",
+            "Stimulus",
+            "Redis"
+        ],
+        "content": "## Overview\nManage tasks efficiently...\n",
+        "thumbnail": "https://placehold.co/600x400/png?text=Task+Master",
+        "period": "2021.05 - 2022.01",
+        "metrics": [
+            {
+                "label": "Users",
+                "value": "5k+"
+            }
+        ],
+        "gallery": [],
+        "createdAt": "2022-02-01T00:00:00Z"
+    },
+    {
+        "slug": "health-tracker-wearable",
+        "title": "HealthTracker Wearable",
+        "summary": "Companion app for fitness wearables tracking vital signs and activities.",
+        "tags": [
+            "Flutter",
+            "Dart",
+            "Bluetooth",
+            "HealthKit"
+        ],
+        "content": "## Overview\nSyncs with wearable devices...\n",
+        "thumbnail": "https://placehold.co/600x400/png?text=Health+Tracker",
+        "period": "2023.09 - Present",
+        "metrics": [
+            {
+                "label": "Rating",
+                "value": "4.9"
+            }
+        ],
+        "gallery": [],
+        "createdAt": "2023-11-20T00:00:00Z"
+    },
+    {
+        "slug": "vr-museum-tour",
+        "title": "VR Museum Tour",
+        "summary": "Immersive virtual reality experience for exploring historical artifacts.",
+        "tags": [
+            "Unity",
+            "C#",
+            "VR",
+            "Oculus"
+        ],
+        "content": "## Overview\nVirtual tour of the National Museum...\n",
+        "thumbnail": "https://placehold.co/600x400/png?text=VR+Museum",
+        "period": "2022.03 - 2022.06",
+        "metrics": [
+            {
+                "label": "Visitors",
+                "value": "10k"
+            }
+        ],
+        "gallery": [],
+        "createdAt": "2022-07-10T00:00:00Z"
+    }
+]

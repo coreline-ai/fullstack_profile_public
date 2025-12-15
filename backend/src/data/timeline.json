@@ -1,0 +1,152 @@
+[
+    {
+        "id": "1",
+        "title": "Senior Engineer",
+        "place": "TechCorp Inc.",
+        "period": "2022 - Present",
+        "bullets": [
+            "Leading frontend migration to Next.js",
+            "Mentoring 3 junior developers",
+            "Improved build times by 40%"
+        ]
+    },
+    {
+        "id": "2",
+        "title": "Frontend Developer",
+        "place": "StartUp Studio",
+        "period": "2020 - 2022",
+        "bullets": [
+            "Developed responsive web interfaces for fintech clients"
+        ]
+    },
+    {
+        "id": "3",
+        "title": "Junior Web Developer",
+        "place": "Digital Agency",
+        "period": "2018 - 2020",
+        "bullets": [
+            "Built landing pages for various clients using HTML/CSS/JS",
+            "Assisted in maintaining legacy WordPress sites"
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Web Development Intern",
+        "place": "Creative Solutions",
+        "period": "2017 - 2018",
+        "bullets": [
+            "Learned React.js fundamentals",
+            "Collaborated with designers to implement UI/UX improvements"
+        ]
+    },
+    {
+        "id": "5",
+        "title": "Freelance Full Stack Developer",
+        "place": "Remote",
+        "period": "2016 - 2017",
+        "bullets": [
+            "Built custom e-commerce solutions for small businesses",
+            "Implemented payment gateway integrations (Stripe, PayPal)",
+            "Optimized database queries for faster load times"
+        ]
+    },
+    {
+        "id": "6",
+        "title": "BS in Computer Science",
+        "place": "State University",
+        "period": "2012 - 2016",
+        "bullets": [
+            "Graduated with Honors (GPA 3.8/4.0)",
+            "Specialized in Software Engineering and Database Systems",
+            "Capstone Project: Real-time Collaboration Tool"
+        ]
+    },
+    {
+        "id": "7",
+        "title": "Open Source Contributor",
+        "place": "GitHub",
+        "period": "2015 - Present",
+        "bullets": [
+            "Contributed to popular React UI libraries",
+            "Maintained documentation for several npm packages",
+            "Fixed bugs in community-driven tools"
+        ]
+    },
+    {
+        "id": "8",
+        "title": "Tech Blog Writer",
+        "place": "Medium & Dev.to",
+        "period": "2019 - Present",
+        "bullets": [
+            "Authored 50+ articles on Web Development trends",
+            "Featured in 'JavaScript Weekly' newsletter",
+            "Reached 10k+ monthly readers"
+        ]
+    },
+    {
+        "id": "9",
+        "title": "Software Engineering Intern",
+        "place": "Big Tech Co.",
+        "period": "Summer 2015",
+        "bullets": [
+            "Developed internal tools using Python and Django",
+            "Participated in agile sprints and code reviews",
+            "Automated testing pipelines using Jenkins"
+        ]
+    },
+    {
+        "id": "10",
+        "title": "Hackathon Winner",
+        "place": "Global Hack 2015",
+        "period": "2015",
+        "bullets": [
+            "Won 1st place in 'Smart City' category",
+            "Built an IoT dashboard using Node.js and Socket.io",
+            "Presented solution to industry leaders"
+        ]
+    },
+    {
+        "id": "11",
+        "title": "Mobile App Developer",
+        "place": "University Club",
+        "period": "2014 - 2015",
+        "bullets": [
+            "Created campus event tracking app (Android)",
+            "Implemented push notifications and calendar integration",
+            "Published to Google Play Store"
+        ]
+    },
+    {
+        "id": "12",
+        "title": "Volunteer Coding Tutor",
+        "place": "Local Library",
+        "period": "2018 - 2020",
+        "bullets": [
+            "Taught basic Python and Scratch to elementary students",
+            "Organized weekend coding workshops",
+            "Mentored students for regional coding competitions"
+        ]
+    },
+    {
+        "id": "13",
+        "title": "AWS Certified Solutions Architect",
+        "place": "Amazon Web Services",
+        "period": "2023",
+        "bullets": [
+            "Achieved Associate validation",
+            "Demonstrated expertise in designing distributed systems",
+            "Mastered cloud security best practices"
+        ]
+    },
+    {
+        "id": "14",
+        "title": "Conference Speaker",
+        "place": "JS Conf 2021",
+        "period": "2021",
+        "bullets": [
+            "Topic: 'State Management in Large Scale Applications'",
+            "Shared insights on Redux vs Context API",
+            "Conducted Q&A session with 200+ attendees"
+        ]
+    }
+]

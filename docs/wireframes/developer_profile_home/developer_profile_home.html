@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Developer Profile Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#6366F1", // Indigo-500
+                        "secondary": "#EC4899", // Pink-500
+                        "background-light": "#f8fafc", // slate-50
+                        "background-dark": "#0f172a", // slate-900
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-[#1F2937] dark:text-gray-100 font-display transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto bg-background-light dark:bg-background-dark overflow-x-hidden shadow-xl">
+<div class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 pb-2 justify-between">
+<div class="text-[#0d0e1b] dark:text-white flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</div>
+<h2 class="text-[#0d0e1b] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Profile</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex size-12 cursor-pointer items-center justify-center overflow-hidden rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors text-[#0d0e1b] dark:text-white">
+<span class="material-symbols-outlined text-2xl">more_horiz</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col items-center pt-2 pb-6 px-4">
+<div class="relative group cursor-pointer">
+<div class="absolute -inset-1 bg-gradient-to-tr from-primary to-secondary rounded-full blur opacity-75 group-hover:opacity-100 transition duration-200"></div>
+<div class="relative w-32 h-32 rounded-full border-4 border-background-light dark:border-background-dark bg-gray-200 bg-center bg-cover" data-alt="Portrait of a smiling developer with glasses in a modern office" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQxZ_sqiPEjG0LFVHubEjtLIXpsiyCq3Hp9KO-5KHr8p0EfAv9iwAikK66LoppOhy1u7fABJTyM3UpCIJOFbpC_in0x-YlCYa4CvPfcHsoQCXGyalq8W4AyTX23HZjJw0iGsSuQphUc7q4oumyXVZpvEA7oPzqEXJ4sUh-g37V9Gpz3IvibHSuYYCwyBfka2rfzJ4V6k9gsLivEpazpwXe8zIfhobaTX7WVFntLqUubd39p49p0727uRpbVAUeF4w_KeiST6OUJgk');">
+</div>
+<div class="absolute bottom-2 right-2 w-5 h-5 bg-green-500 border-4 border-background-light dark:border-background-dark rounded-full"></div>
+</div>
+<div class="flex flex-col items-center justify-center mt-4 gap-1">
+<h1 class="text-[#0d0e1b] dark:text-white text-2xl font-bold leading-tight tracking-tight text-center">Alex Dev</h1>
+<p class="text-secondary font-medium text-sm tracking-wide uppercase">Full Stack Engineer</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-relaxed text-center max-w-[280px] mt-1">
+                    Building digital experiences that matter. Based in San Francisco, CA.
+                </p>
+</div>
+</div>
+<div class="px-4 pb-6">
+<div class="grid grid-cols-4 gap-3">
+<button class="flex flex-col items-center gap-2 group">
+<div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-white dark:bg-surface-dark shadow-sm border border-indigo-100 dark:border-gray-700 group-hover:border-primary/50 group-hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary text-2xl">description</span>
+</div>
+<span class="text-xs font-semibold text-gray-600 dark:text-gray-300">Resume</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-white dark:bg-surface-dark shadow-sm border border-indigo-100 dark:border-gray-700 group-hover:border-primary/50 group-hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary text-2xl">code</span>
+</div>
+<span class="text-xs font-semibold text-gray-600 dark:text-gray-300">GitHub</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-white dark:bg-surface-dark shadow-sm border border-indigo-100 dark:border-gray-700 group-hover:border-primary/50 group-hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary text-2xl">work</span>
+</div>
+<span class="text-xs font-semibold text-gray-600 dark:text-gray-300">LinkedIn</span>
+</button>
+<button class="flex flex-col items-center gap-2 group">
+<div class="flex items-center justify-center w-14 h-14 rounded-2xl bg-white dark:bg-surface-dark shadow-sm border border-indigo-100 dark:border-gray-700 group-hover:border-primary/50 group-hover:shadow-md transition-all">
+<span class="material-symbols-outlined text-primary text-2xl">mail</span>
+</div>
+<span class="text-xs font-semibold text-gray-600 dark:text-gray-300">Contact</span>
+</button>
+</div>
+</div>
+<div class="px-4 pb-6">
+<div class="flex flex-wrap gap-3">
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-2xl bg-white dark:bg-surface-dark border border-indigo-50 dark:border-gray-800 p-4 items-center text-center shadow-sm hover:shadow-md transition-shadow">
+<p class="text-primary tracking-tight text-xl font-bold leading-tight">5+</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium uppercase tracking-wide">Years Exp</p>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-2xl bg-white dark:bg-surface-dark border border-indigo-50 dark:border-gray-800 p-4 items-center text-center shadow-sm hover:shadow-md transition-shadow">
+<p class="text-primary tracking-tight text-xl font-bold leading-tight">20+</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium uppercase tracking-wide">Projects</p>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-2xl bg-white dark:bg-surface-dark border border-indigo-50 dark:border-gray-800 p-4 items-center text-center shadow-sm hover:shadow-md transition-shadow">
+<p class="text-primary tracking-tight text-xl font-bold leading-tight">100%</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium uppercase tracking-wide">Committed</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col pb-8">
+<h3 class="text-[#0d0e1b] dark:text-white text-lg font-bold leading-tight tracking-tight px-4 pb-4">Tech Stack &amp; Services</h3>
+<div class="px-4 grid grid-cols-1 gap-4">
+<div class="flex flex-col gap-3">
+<p class="text-xs font-semibold uppercase text-gray-400 dark:text-gray-500 tracking-wider pl-1">Languages</p>
+<div class="flex flex-wrap gap-2">
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-700 shadow-sm">
+<span class="w-6 h-6 flex items-center justify-center rounded bg-yellow-100 text-yellow-600 text-xs font-bold">JS</span>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-200">JavaScript</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-700 shadow-sm">
+<span class="w-6 h-6 flex items-center justify-center rounded bg-blue-100 text-blue-600 text-xs font-bold">TS</span>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-200">TypeScript</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-700 shadow-sm">
+<span class="w-6 h-6 flex items-center justify-center rounded bg-orange-100 text-orange-600 text-[10px] font-bold">SW</span>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-200">Swift</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<p class="text-xs font-semibold uppercase text-gray-400 dark:text-gray-500 tracking-wider pl-1">Frameworks</p>
+<div class="flex flex-wrap gap-2">
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-indigo-50 dark:bg-primary/20 border border-primary/20 shadow-sm">
+<span class="material-symbols-outlined text-primary text-lg">smartphone</span>
+<span class="text-sm font-semibold text-primary dark:text-indigo-200">React Native</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-pink-50 dark:bg-secondary/20 border border-secondary/20 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-lg">grid_view</span>
+<span class="text-sm font-semibold text-secondary dark:text-pink-200">Next.js</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-2 rounded-xl bg-white dark:bg-surface-dark border border-gray-100 dark:border-gray-700 shadow-sm">
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-400 text-lg">dataset</span>
+<span class="text-sm font-medium text-gray-700 dark:text-gray-200">Node.js</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-3">
+<p class="text-xs font-semibold uppercase text-gray-400 dark:text-gray-500 tracking-wider pl-1">Tools</p>
+<div class="flex flex-wrap gap-2">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/50 dark:bg-surface-dark/50 border border-dashed border-gray-300 dark:border-gray-700">
+<span class="material-symbols-outlined text-gray-400 text-base">brush</span>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-400">Figma</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/50 dark:bg-surface-dark/50 border border-dashed border-gray-300 dark:border-gray-700">
+<span class="material-symbols-outlined text-gray-400 text-base">terminal</span>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-400">VS Code</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/50 dark:bg-surface-dark/50 border border-dashed border-gray-300 dark:border-gray-700">
+<span class="material-symbols-outlined text-gray-400 text-base">cloud</span>
+<span class="text-xs font-medium text-gray-600 dark:text-gray-400">AWS</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col pb-8 px-4">
+<div class="flex justify-between items-end mb-6">
+<h3 class="text-[#0d0e1b] dark:text-white text-lg font-bold leading-tight tracking-tight">Career Timeline</h3>
+</div>
+<div class="relative pl-3">
+<div class="absolute left-[11px] top-2 bottom-0 w-[2px] bg-gradient-to-b from-gray-200 via-gray-200 to-transparent dark:from-gray-700 dark:via-gray-800 rounded-full"></div>
+<div class="relative flex gap-4 mb-8">
+<div class="z-10 mt-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-[3px] border-white dark:border-background-dark bg-primary shadow-lg shadow-primary/30 ring-2 ring-indigo-50 dark:ring-primary/20">
+<span class="material-symbols-outlined text-white text-[14px]">work</span>
+</div>
+<div class="flex flex-col w-full">
+<div class="flex flex-col p-4 rounded-xl bg-white dark:bg-surface-dark border border-indigo-100 dark:border-gray-800 shadow-sm relative">
+<div class="absolute top-4 -left-[6px] w-3 h-3 bg-white dark:bg-surface-dark border-l border-t border-indigo-100 dark:border-gray-800 transform -rotate-45"></div>
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-bold text-[#0d0e1b] dark:text-white text-base">Senior Engineer</h4>
+<span class="text-[10px] font-bold text-primary bg-indigo-50 dark:bg-primary/20 px-2 py-1 rounded-full uppercase tracking-wide">Present</span>
+</div>
+<p class="text-sm font-semibold text-gray-600 dark:text-gray-300 mb-2">TechCorp Inc.</p>
+<ul class="list-disc list-inside text-xs text-gray-500 dark:text-gray-400 space-y-1">
+<li>Leading frontend migration to Next.js</li>
+<li>Mentoring 3 junior developers</li>
+<li>Improved build times by 40%</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="relative flex gap-4 mb-8">
+<div class="z-10 mt-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-[3px] border-white dark:border-background-dark bg-secondary shadow-lg shadow-secondary/30 ring-2 ring-pink-50 dark:ring-secondary/20">
+<span class="material-symbols-outlined text-white text-[14px]">code</span>
+</div>
+<div class="flex flex-col w-full">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<h4 class="font-bold text-gray-800 dark:text-gray-200">Frontend Developer</h4>
+<span class="text-xs font-medium text-gray-400">2020 - 2022</span>
+</div>
+<p class="text-sm font-medium text-secondary">StartUp Studio</p>
+<p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Developed responsive web interfaces for high-growth fintech clients using React.</p>
+</div>
+</div>
+</div>
+<div class="relative flex gap-4 mb-2">
+<div class="z-10 mt-1.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-[3px] border-white dark:border-background-dark bg-gray-400 dark:bg-gray-600 shadow-sm">
+<span class="material-symbols-outlined text-white text-[14px]">school</span>
+</div>
+<div class="flex flex-col w-full">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<h4 class="font-bold text-gray-700 dark:text-gray-300">B.S. Computer Science</h4>
+<span class="text-xs font-medium text-gray-400">2016 - 2020</span>
+</div>
+<p class="text-sm font-medium text-gray-500 dark:text-gray-400">University of Technology</p>
+<p class="text-xs text-gray-400 mt-0.5">Focus on Human-Computer Interaction.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col pb-32 px-4">
+<div class="flex justify-between items-end mb-4">
+<h3 class="text-[#0d0e1b] dark:text-white text-lg font-bold leading-tight tracking-tight">Featured Projects</h3>
+<div class="flex gap-2">
+<button class="flex items-center justify-center w-8 h-8 rounded-full border border-gray-200 dark:border-gray-700 text-gray-500 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+<button class="flex items-center justify-center w-8 h-8 rounded-full border border-gray-200 dark:border-gray-700 text-gray-500 hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="group relative flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-surface-dark shadow-sm border border-gray-100 dark:border-gray-800 transition-all hover:shadow-lg hover:-translate-y-1 duration-300">
+<div class="h-48 w-full bg-cover bg-center relative" data-alt="Abstract visualization of finance dashboard with charts and graphs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQz5d2cXHiyDKtyvvB-dmXg73Bf3-hBnE4MVn4ZkbG0F3JJWtn_efv_epmjdKQbqxsWgxAfDP3Gs_zrTZ4M_d8gErxDNkLfT5hkGFPN8RYEs8j8xQF7Qt7BzhEBd7X2nbROsuD947ceyyvLWfW9VS6dwg79MTmSKJkuw3YyToGk0wjCz5W6ebFnPhF1DI1ohLJlSiYyK3hQCElMp5AFT2ixtmhvdqs8pCoMn7zsEUX1KPGiNHyqHlL_sZOnersm4jwYALSbsbIH_s');">
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
+<span class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur text-xs font-bold px-2 py-1 rounded-md shadow-sm text-gray-800 dark:text-white">FinTech</span>
+</div>
+<div class="flex flex-col p-5 gap-3">
+<div class="flex justify-between items-start">
+<h4 class="text-lg font-bold text-[#0d0e1b] dark:text-white group-hover:text-primary transition-colors">NeoBank Mobile App</h4>
+<div class="w-8 h-8 flex items-center justify-center rounded-full bg-gray-50 dark:bg-white/5 group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-xl">arrow_outward</span>
+</div>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 line-clamp-2 leading-relaxed">A complete redesign of the mobile banking experience focusing on accessibility and speed.</p>
+<div class="flex flex-wrap gap-2 pt-2 border-t border-gray-50 dark:border-gray-700/50 mt-1">
+<span class="text-[10px] font-semibold px-2 py-1 bg-indigo-50 dark:bg-primary/20 text-primary rounded-md">React Native</span>
+<span class="text-[10px] font-semibold px-2 py-1 bg-pink-50 dark:bg-secondary/20 text-secondary rounded-md">GraphQL</span>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-6 left-0 right-0 px-4 flex justify-center z-50 pointer-events-none">
+<button class="pointer-events-auto shadow-xl shadow-primary/30 flex items-center justify-center gap-2 bg-[#0d0e1b] dark:bg-white text-white dark:text-[#0d0e1b] rounded-full px-6 py-3 font-bold text-sm transition-transform hover:scale-105 active:scale-95 max-w-sm w-full md:w-auto ring-4 ring-white/20 dark:ring-black/20 backdrop-blur-sm">
+<span class="material-symbols-outlined text-lg">rocket_launch</span>
+                Let's build something together
+            </button>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer theme {
+  :root {
+    --font-display: Manrope, sans-serif;
+    --color-primary: #5b2bee;
+    --color-background-light: #f6f6f8;
+    --color-background-dark: #151022;
+  }
+}
+
+@layer base {
+  html {
+    overflow-y: scroll;
+    /* Force vertical scrollbar */
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+    overflow-y: visible;
+    /* Ensure body doesn't lock scroll */
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #5b2bee, #8b5cf6);
+  }
+}
+
+/* Custom scrollbar for better aesthetics */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

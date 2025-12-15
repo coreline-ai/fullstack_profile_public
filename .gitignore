@@ -1,0 +1,23 @@
+﻿# Environment
+**/.env
+**/.env.*
+!.env.example
+
+# Node
+**/node_modules/
+**/.next/
+**/dist/
+
+# Flutter/Dart
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+
+# IDE
+**/.idea/
+**/.vscode/
+**/*.iml
+
+# OS
+.DS_Store
+Thumbs.db

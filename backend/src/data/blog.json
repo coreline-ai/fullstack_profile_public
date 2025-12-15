@@ -1,0 +1,109 @@
+[
+    {
+        "title": "Analyzing Blog Detail page code.",
+        "slug": "analyzing-blog-detail-page-code.",
+        "summary": "브라우저 테스트 결과, 블로그 목록에서 글을 클릭하면 상세 내용이 정상적으로 표시됩니다.",
+        "tags": [
+            "Next.js"
+        ],
+        "content": "\n\n---\n# \n\n`\n```\n<!-- ![\n\n1. > [title](url)\n\n]() -->\n```\n`\n![image](http://localhost:4000/uploads/1765686237315-494349612.png)",
+        "publishedAt": "2025-12-14T04:24:10.368Z",
+        "imageUrl": "http://localhost:4000/uploads/1765686439691-814612196.png"
+    },
+    {
+        "title": "Curl Blog Post",
+        "summary": "Testing blog persistence",
+        "tags": [
+            "Test"
+        ],
+        "content": "# Hello Blog",
+        "slug": "curl-blog-post",
+        "publishedAt": "2025-12-13T04:24:38.156Z",
+        "imageUrl": "http://localhost:4000/uploads/1765686459964-746225961.png"
+    },
+    {
+        "slug": "optimizing-nextjs-performance",
+        "title": "Optimizing Next.js Performance",
+        "summary": "Strategies for improving Core Web Vitals in a large scale Next.js application.",
+        "tags": [
+            "Next.js",
+            "Performance",
+            "Web"
+        ],
+        "content": "# Optimizing Next.js\n\nPerformance is key...\n\n## Image Optimization\nUse `next/image`...",
+        "publishedAt": "2023-11-01T00:00:00Z",
+        "imageUrl": "http://localhost:4000/uploads/1765686470505-596930261.png"
+    },
+    {
+        "slug": "flutter-webview-integration",
+        "title": "Seamless Flutter WebView Integration",
+        "summary": "How to build a hybrid app using Flutter WebView with bi-directional communication.",
+        "tags": [
+            "Flutter",
+            "Mobile",
+            "WebView"
+        ],
+        "content": "# Flutter WebView\n\nHybrid apps offer...",
+        "publishedAt": "2023-10-05T00:00:00Z",
+        "imageUrl": "http://localhost:4000/uploads/1765686485569-757776725.png"
+    },
+    {
+        "slug": "mastering-cicd-pipelines",
+        "title": "Mastering CI/CD Pipelines",
+        "summary": "A comprehensive guide to building robust deployment pipelines with GitHub Actions.",
+        "tags": [
+            "DevOps",
+            "CI/CD",
+            "GitHub"
+        ],
+        "content": "# CI/CD pipelines...\nAutomate everything...",
+        "publishedAt": "2023-09-15T00:00:00Z"
+    },
+    {
+        "slug": "ui-ux-trends-2024",
+        "title": "UI/UX Design Trends for 2024",
+        "summary": "Exploring the upcoming design trends: Neomorphism, Glassmorphism, and beyond.",
+        "tags": [
+            "Design",
+            "UI/UX",
+            "Trends"
+        ],
+        "content": "# Design Trends\nWhat's next?",
+        "publishedAt": "2023-12-01T00:00:00Z"
+    },
+    {
+        "slug": "serverless-architecture-pros-cons",
+        "title": "Serverless Architecture: Pros & Cons",
+        "summary": "Is serverless right for your next project? Deep dive into AWS Lambda and Vercel.",
+        "tags": [
+            "Cloud",
+            "Serverless",
+            "AWS"
+        ],
+        "content": "# Serverless\nScale without servers...",
+        "publishedAt": "2023-08-10T00:00:00Z"
+    },
+    {
+        "slug": "effective-code-reviews",
+        "title": "The Art of Effective Code Reviews",
+        "summary": "How to conduct code reviews that improve quality and foster team growth.",
+        "tags": [
+            "Engineering Culture",
+            "Best Practices"
+        ],
+        "content": "# Code Reviews\nBe kind and constructive...",
+        "publishedAt": "2023-07-22T00:00:00Z"
+    },
+    {
+        "slug": "typescript-advanced-types",
+        "title": "Advanced TypeScript Patterns",
+        "summary": "Level up your TypeScript skills with Generics, mapped types, and utility types.",
+        "tags": [
+            "TypeScript",
+            "Frontend",
+            "Programming"
+        ],
+        "content": "# TypeScript Magic\nType safety at its best...",
+        "publishedAt": "2023-11-15T00:00:00Z"
+    }
+]
