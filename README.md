@@ -8,9 +8,7 @@
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0-06B6D4?logo=tailwindcss&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-<img width="900" height="750" alt="project-preview" src="https://github.com/user-attachments/assets/b7e687ce-2a73-48bf-90f1-fa896b808905" />
-
-# Fullstack DevProfile & Flutter App
+# Fullstack DevProfile & Flutter App (IOS, Android)
 
 이력서/포트폴리오 웹사이트와, 이를 보조하는 모바일 애플리케이션, 그리고 강력한 백엔드를 갖춘 포괄적인 포트폴리오 솔루션입니다. 이 프로젝트는 웹과 모바일 플랫폼을 잇는 풀스택 아키텍처를 보여줍니다.
 
