@@ -1,12 +1,27 @@
 @import "tailwindcss";
 
-@layer theme {
-  :root {
-    --font-display: Manrope, sans-serif;
-    --color-primary: #5b2bee;
-    --color-background-light: #f6f6f8;
-    --color-background-dark: #151022;
-  }
+@theme {
+  --font-display: Manrope, sans-serif;
+
+  --color-primary: #5b2bee;
+
+  /* Define colors directly as variables that Tailwind v4 picks up */
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #151022;
+
+  /* Map the semantic names 'background-light' and 'background-dark' */
+  --color-background-light: #f6f6f8;
+  --color-background-dark: #151022;
+}
+
+/* 
+  In v4, we use standard CSS variables for runtime values if needed, 
+  but the @theme block above handles the utility generation.
+*/
+:root {
+  --primary: #5b2bee;
+  --background-light: #f6f6f8;
+  --background-dark: #151022;
 }
 
 @layer base {

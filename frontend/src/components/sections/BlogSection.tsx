@@ -67,7 +67,7 @@ const BlogSection: React.FC<BlogSectionProps> = ({ posts }) => {
                                         </span>
                                         {post.publishedAt && (
                                             <span className="px-2 py-1 text-xs font-semibold text-gray-500 bg-gray-100 dark:bg-gray-700 rounded">
-                                                {new Date(post.publishedAt).toLocaleDateString()}
+                                                {new Date(post.publishedAt).toLocaleDateString('en-US')}
                                             </span>
                                         )}
                                     </div>

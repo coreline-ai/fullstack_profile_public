@@ -10,14 +10,9 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                primary: "#5b2bee",
-                "background-light": "#f6f6f8",
-                "background-dark": "#151022",
-                // Keeping existing structure as aliases if needed, but primary focus is compatibility
-                background: {
-                    light: "#f6f6f8",
-                    dark: "#151022",
-                },
+                // We keep primary mapped if needed for non-CSS usage, but v4 prefers CSS
+                primary: "var(--primary)",
+                // Remove background object to let @theme handle bg-background-dark
             },
             fontFamily: {
                 "display": ["var(--font-display)", "sans-serif"],
